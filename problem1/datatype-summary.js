@@ -28,7 +28,25 @@ let myObj={
     age: "31",
 }
 const myFunction= function(){
-    console.log("Hello World")
+    // console.log("Hello World")
 }
 
-console.log(typeof myObj)// bigNumber,myFunction
+// console.log(typeof myObj)// bigNumber,myFunction
+// ++++++++++++++++++++
+
+// stack(Primitive)
+let a = 10;
+let b = a;
+
+b = 20;
+
+console.log(a); // 10
+console.log(b); // 20
+
+// heap(non-Primitive)
+let obj1 = { name: "Yahya" };
+let obj2 = obj1;
+
+obj2.name = "Ali";
+
+console.log(obj1.name); // Ali
